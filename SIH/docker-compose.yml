@@ -1,0 +1,12 @@
+services:
+  medikiosk:
+    build: .
+    container_name: medikiosk_patient_kiosk
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - DEBUG=True
+      - MAX_FILE_SIZE_MB=10
+    restart: unless-stopped

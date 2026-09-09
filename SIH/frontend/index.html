@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MediKiosk — AI Clinical History-Taking Platform</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+  <link rel="stylesheet" href="/static/css/anatomy.css" />
+</head>
+<body>
+  <!-- Top Navigation / Branding Header -->
+  <header class="kiosk-header">
+    <div class="brand-wrapper">
+      <div class="brand-icon">+</div>
+      <div class="brand-text">
+        <h1>MediKiosk</h1>
+        <p>Smart India Hackathon • Clinical History Platform</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <span class="badge-pill" style="background: #e0f2fe; color: #0284c7;">
+        🏥 Kiosk Terminal #01
+      </span>
+      <div class="lang-indicator" id="lang-indicator">
+        🌐 English
+      </div>
+    </div>
+  </header>
+
+  <!-- Progress Tracker -->
+  <div class="progress-container">
+    <div class="step-tracker" id="step-tracker">
+      <!-- Steps rendered dynamically by app.js -->
+    </div>
+  </div>
+
+  <!-- Main Viewport Mount Point -->
+  <main class="main-wrapper">
+    <div id="app-mount">
+      <!-- Content rendered dynamically by app.js -->
+    </div>
+  </main>
+
+  <!-- Hospital Kiosk Footer -->
+  <footer class="kiosk-footer">
+    <div style="font-size: 0.85rem; color: var(--text-muted);">
+      <strong>Hospital Assistance:</strong> In case of severe chest pain or breathing difficulty, press the emergency bell or alert any nursing officer.
+    </div>
+    <div style="font-size: 0.85rem; color: var(--text-muted);">
+      Member 1: Patient Frontend • ABDM Architecture
+    </div>
+  </footer>
+
+  <!-- Application Bootstrap -->
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
