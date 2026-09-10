@@ -1,0 +1,24 @@
+# MediKiosk - Member 2 (AI + Voice engine)
+# Python 3.10+   |   everything runs locally, no paid API
+
+# --- core ---
+pydantic>=2.6,<3
+requests>=2.31
+
+# --- speech to text (local) ---
+faster-whisper>=1.0.0
+sounddevice>=0.4.6
+
+# --- text to speech (local) ---
+pyttsx3>=2.90
+
+# --- testing ---
+pytest>=8.0
+
+# NOTE:
+# Ollama is NOT a pip package. Install it separately:
+#   https://ollama.com/download
+#   ollama pull gemma3:4b
+#
+# Linux extras for audio/TTS:
+#   sudo apt install portaudio19-dev espeak ffmpeg
